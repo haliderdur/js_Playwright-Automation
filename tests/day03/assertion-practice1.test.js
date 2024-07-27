@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Assertion in UI testing", () => {
+test.describe("Assertion in UI testing", async () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("https://practice.cydeo.com");
   });

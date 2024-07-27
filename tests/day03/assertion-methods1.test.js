@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Assertion methods", () => {
+test.describe("Assertion methods", async() => {
 
   test("toBe assertion", async () => {
     let elementValue = 5;

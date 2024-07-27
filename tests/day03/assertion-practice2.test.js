@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 let elements;
 let count;
 
-test.describe("Assertion practice2", () => {
+test.describe("Assertion practice2", async() => {
   test.beforeEach(async ({ page }) => {
     await page.goto("https://practice.cydeo.com");
     elements = page.locator("//ul[@class='list-group']/li/a");
