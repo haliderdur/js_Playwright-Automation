@@ -60,7 +60,4 @@ test.describe('Test Group', () => {
     await expect(page.locator("text='You entered: Cydeo'")).toBeVisible();
   });
 
-  test('Test 4', async ({ page }) => {
-    // Your test logic here
-  });
 });
