@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "tests": "playwright test",
-    "test:specific": "playwright test ./tests/**/mouse-actions.test.js",
+    "test:specific": "playwright test ./tests/**/file-upload-download.test.js",
     "report": "playwright show-report"
   },
   "keywords": [],
