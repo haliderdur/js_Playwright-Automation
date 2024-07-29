@@ -5,6 +5,7 @@
   "scripts": {
     "tests": "playwright test",
     "test:specific": "playwright test ./tests/**/file-upload-download.test.js",
+    "test:tag": "playwright test --grep @smoke",
     "report": "playwright show-report"
   },
   "keywords": [],
