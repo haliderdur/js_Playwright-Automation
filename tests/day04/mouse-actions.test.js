@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Test Group", async () => {
+test.describe("Mouse Actions", async () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("https://practice.cydeo.com");
   });

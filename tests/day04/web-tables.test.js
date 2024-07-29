@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Test Group", async () => {
+test.describe("Web Tables", async () => {
 
     let table, rows, columns, cells;
     let rowCount, columnCount, cellCount;
