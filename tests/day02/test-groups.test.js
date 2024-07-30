@@ -7,16 +7,16 @@ test.describe("Cydeo practice website tests", async () => {
   });
 
   test.afterEach(async ({page}) => {
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
   });
 
   test("A/B Testing is clickable", async ({page}) => {
-    const abTestingElement = await page.locator("text='A/B Testing'");
+    const abTestingElement = page.locator("text='A/B Testing'");
     console.log(`A/B Testing is clickable: ${await abTestingElement.isEnabled()}`);
   });
 
   test("Add/Remove Elements is enabled", async ({page}) => {
-    const addRemoveElementsElement = await page.locator("text='Add/Remove Elements'");
+    const addRemoveElementsElement = page.locator("text='Add/Remove Elements'");
     console.log(`Add/Remove Elements is enabled: ${await addRemoveElementsElement.isEnabled()}`);
   });
 

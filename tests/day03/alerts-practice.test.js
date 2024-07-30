@@ -23,7 +23,6 @@ test.describe('Test Group', async () => {
 
     const successMessage = page.locator("'You successfully clicked an alert'");
     await expect(successMessage).toBeVisible();
-  
   });
 
   test('Handling JS Confirmation alerts', async ({ page }) => {

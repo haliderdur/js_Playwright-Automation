@@ -18,7 +18,7 @@ test.describe("Web Tables", async () => {
   });
 
   test.afterEach(async ({ page }) => {
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
   });
 
   test("Verify rows, columns and cells in Pizza table", async ({ page }) => {

@@ -9,7 +9,7 @@ test.describe('File upload download', async () => {
     });
 
     test.afterEach(async ({ page }) => {
-        await page.waitForTimeout(2000);
+        await page.waitForTimeout(1000);
     });
 
   test('File upload test', async ({ page }) => {
@@ -44,9 +44,7 @@ test.describe('File upload download', async () => {
     await page.click("text='Selenium Review.txt'");
 
     const download = await downloadPromise; // promise is resolved: fulfilled or reject state
-
     expect(download.suggestedFilename()).toBe("Selenium Review.txt");
-
   });
 
   test('Save the downloaded file', async ({ page }) => {

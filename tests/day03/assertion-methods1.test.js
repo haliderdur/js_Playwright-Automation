@@ -40,7 +40,7 @@ async function pause(seconds) {
 
 // Use the pause function in a test
 test("pause function test", async () => {
-  await pause(2); // Pause for 2 seconds
+  await pause(1); // Pause for 1 second
 });
 
 

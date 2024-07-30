@@ -19,8 +19,6 @@ test("check/uncheck method test: can be used for radio buttons & checkboxes", as
 
   // click on checkbox2
   await checkbox2.uncheck();
-
-  await page.waitForTimeout(2000);
 });
 
 test("selectOptions method test: can be used for dropdowns", async ({

@@ -6,7 +6,7 @@ test.describe("Mouse Actions", async () => {
   });
 
   test.afterEach(async ({ page }) => {
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(1000);
   });
 
   test("Left click test", async ({ page }) => {

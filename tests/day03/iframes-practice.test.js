@@ -25,7 +25,6 @@ test.describe("Test Group", async() => {
     const textBoxElementInsideFrame = myFrame.locator("//body[@id='tinymce']");
 
     await expect(textBoxElementInsideFrame).toBeEnabled();
-
   });
 
   test("Locate the iframe using XPath", async ({ page }) => {

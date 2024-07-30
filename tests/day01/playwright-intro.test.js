@@ -14,11 +14,9 @@ test("Search for Playwright on Google", async ({ page }) => {
   const searchBox = await page.locator("[name=q]");
 
   // type "Playwright"
-  await page.waitForTimeout(2000); // pause for 2 seconds
   await searchBox.fill("Playwright Automation");
 
   // press Enter
-  await page.waitForTimeout(2000); // pause for 2 seconds
   await searchBox.press("Enter");
   // await page.keyboard.press("Enter");
 });

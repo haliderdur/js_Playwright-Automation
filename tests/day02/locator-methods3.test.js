@@ -12,7 +12,7 @@ test("state methods of locator", async ({ page }) => {
   // go to https://practice.cydeo.com
   await page.goto("https://practice.cydeo.com");
 
-  const autoCompleteLink = await page.locator("text='Autocomplete'");
+  const autoCompleteLink = page.locator("text='Autocomplete'");
 
   const elementIsDisplayed = await autoCompleteLink.isVisible();
   const elementIsDisabled = await autoCompleteLink.isDisabled();
@@ -22,11 +22,11 @@ test("state methods of locator", async ({ page }) => {
   console.log(elementIsDisabled);
   console.log(elementIsEnabled);
 
-  const checkBoxLink = await page.locator("text='Checkboxes'");
+  const checkBoxLink = page.locator("text='Checkboxes'");
   await checkBoxLink.click();
 
-  const checkbox1 = await page.locator("//input[@id='box1']");
-  const checkbox2 = await page.locator("//input[@id='box2']");
+  const checkbox1 = page.locator("//input[@id='box1']");
+  const checkbox2 = page.locator("//input[@id='box2']");
 
   console.log(await checkbox1.isChecked());
   console.log(await checkbox2.isChecked());
